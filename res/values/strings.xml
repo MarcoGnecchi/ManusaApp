@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
 
-    <string name="hello">Hello World, ManusaAndroidActivity!</string>
-    <string name="app_name">ManusaAndroid</string>
+  <resources>
+    <string name="app_name">ManusApp</string>
+    <string name="showPlantButton">Visualizza Impianto</string>
+    <string name="createWorkReportButton">Crea scheda di intervento</string>
+    <string name="option">opzioni</string>
+    <string name="secondary">secondario</string>
+    <string name="plantNumber">Numero di impianto</string>
+    <string name="plantState">Stato impianto</string>
+    <string name="shipmentDate">Data di spedizione</string>
+    <string name="dateWarranty">Data Garanzia</string>
+    <string name="warrantyType">Tipo di garanzia</string>
+    <string name="supplyType">Tipo di fornitura</string>
+    <string name="doorDetails">Dettagli Porta</string>
+    <string name="plantAddress">Indirizzo impianto</string>
+    <string name="doorType">Tipo di porta</string>
+    <string name="motorType">Operatore</string>
+    <string name="shutterType">Anta</string>
+    <string name="colorType">Tipo di colorazione</string>
+    <string name="color">colore</string>
+    <string name="glassType">Vetro</string>
+    <string name="city">città</string>
+    <string name="motorDescription">Descrizione operatore</string>
+    <string name="manualInsertion">Inserimento manuale</string>
+    <string name="cameraInsertion">Inserimento da fotocamera</string>
+    <string name="manualInsertionok">Ok</string>
+    <string name="manualInsertionBack">Back</string>
+    <string name="itemSelectorChoosen">Fine selezione</string>
+    <string name="dashboard_action">action</string>
+
 
 </resources>
