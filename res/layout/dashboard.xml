@@ -14,7 +14,7 @@
 
                 <ImageButton
                     style="@style/DashBoardAction"
-                    android:onClick="onMapAction"
+                    android:onClick="onReportAction"
                     android:src="@drawable/report"
                     />
 

@@ -16,18 +16,17 @@ public class Plant {
 
 	public Plant() {
 
-		shipmentDate = DEFAULT_VALUE;
-		warranty = DEFAULT_VALUE;
-		number = DEFAULT_VALUE;
-		state = DEFAULT_VALUE;
-		supply = DEFAULT_VALUE;
-		address = DEFAULT_VALUE;
-		city = DEFAULT_VALUE;
-		warrantyDate = DEFAULT_VALUE;
+		shipmentDate = "01/03/2013";
+		warranty = "6 months";
+		number = "123456";
+		state = "delivered";
+		supply = "complete";
+		address = "RG1 7XS";
+		city = "Reading";
+		warrantyDate = "n.d";
 		Id = null;
 		doorId = null;
 
-		door = new Door();
 		customer = new Customer();
 		work = new Work();
 

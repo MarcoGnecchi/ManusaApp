@@ -19,6 +19,8 @@ import it.manusaservices.dialogs.ScanMethodDialog;
 
 public class DashBoard extends ManusaActivity {
 
+	public static int VIEW_PLANT = 1;
+	public static int CREATE_REPORT = 2;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -46,12 +48,19 @@ public class DashBoard extends ManusaActivity {
 	}
 	
 	public void onPreviewAction(View v){
-		DialogFragment dialog  = new ScanMethodDialog(ScanMethodDialog.VIEW_DETAILS);
-		dialog.show(getFragmentManager(), "dialog");
-		
-//		
+//		DialogFragment dialog  = new ScanMethodDialog(ScanMethodDialog.VIEW_DETAILS);
+//		dialog.show(getFragmentManager(), "dialog");
+		Intent intent = new Intent(this, PlantPullerActivity.class);
+		startActivityForResult(intent, VIEW_PLANT );
+
 //		IntentIntegrator integrator = new IntentIntegrator(DashBoard.this);
 //		integrator.initiateScan();
+	}
+	
+	public void onReportAction(View v){
+		Intent intent = new Intent(this, PlantPullerActivity.class);
+		startActivityForResult(intent, CREATE_REPORT );
+
 	}
 	
 	public void onActivityResult(int requestCode, int resultCode, Intent intent) {

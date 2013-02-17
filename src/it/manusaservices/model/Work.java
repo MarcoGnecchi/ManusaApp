@@ -57,69 +57,6 @@ public class Work {
 		this.plantId = plantId; 
 	}
 	
-	public  String toXML(){
-	
-		XmlSerializer serializer = Xml.newSerializer();
-		StringWriter writer = new StringWriter();
-		try {
-			serializer.setOutput(writer);
-			serializer.startDocument("UTF-8", true);
-			serializer.startTag(null, "workdata");
-			serializer.startTag(null, "work");
-			
-			serializer.startTag(null,"date");
-			serializer.endTag(null,	"date");
-			serializer.startTag(null,"hour");
-			serializer.endTag(null,	"hour");
-			serializer.startTag(null,"note");
-			serializer.text(this.getNote());
-			serializer.endTag(null,	"note");
-			serializer.startTag(null,"plant_id");
-			serializer.text(this.getPlantId().toString());
-			serializer.endTag(null,	"plant_id");
-			serializer.startTag(null,"manpowerhours");
-			serializer.text(this.getManpowerHours().toString());
-			serializer.endTag(null,	"manpowerhours");
-			serializer.startTag(null,"kilometers");
-			serializer.text(this.getKilometers().toString());
-			serializer.endTag(null,	"kilometers");
-			serializer.startTag(null,"priceperwork");
-			serializer.text(this.getPriceperwork().toString());
-			serializer.endTag(null,	"priceperwork");
-			serializer.startTag(null,"manpowerprice");
-			serializer.text(this.getPricePerManpower().toString());
-			serializer.endTag(null,	"manpowerprice");
-			serializer.startTag(null,"kilometersprice");
-			serializer.text(this.getPricePerKilometers().toString());
-			serializer.endTag(null,	"kilometersprice");
-			serializer.endTag(null, "work");
-			serializer.startTag(null, "item");
-			for (Item item : items){
-				for (int i = 0; i < item.getNumOfElements(); i++) {
-					serializer.startTag(null, "item");
-					serializer.text(item.getId().toString());
-					serializer.endTag(null, "item");
-
-				}
-			}
-			serializer.endTag(null, "item");
-			serializer.endTag(null, "workdata");
-			serializer.endDocument();
-		
-		
-		} catch (IllegalArgumentException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IllegalStateException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
-		
-		return writer.toString();	
-	}
 	
 	
 	
