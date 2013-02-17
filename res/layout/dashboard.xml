@@ -1,58 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/home_root"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="vertical"
-  >
+    android:gravity="left"
+    android:orientation="vertical" >
 
     <TableLayout style="@style/DashBoardTable" >
 
         <TableRow style="@style/DashBoardRow" >
 
-            <LinearLayout style="@style/DashBoardActionWrapLeft" >
+            <LinearLayout style="@style/DashBoardActionWrapLeft">
 
-                <Button
+                <ImageButton
                     style="@style/DashBoardAction"
-                    android:drawableTop="@drawable/logomanusaicon"
                     android:onClick="onMapAction"
-                    android:text="@string/dashboard_action" />
+                    android:src="@drawable/report"
+                    />
+
+                   <TextView
+                       style="@style/DashBoardActionText"
+                       android:text="Report" />
+
             </LinearLayout>
 
             <LinearLayout
-                style="@style/DashBoardActionWrapRight"
-                >
+                style="@style/DashBoardActionWrapRight">
 
-                <Button
+                <ImageButton
                     style="@style/DashBoardAction"
-                    android:drawableTop="@drawable/logomanusaicon"
                     android:onClick="onListAction"
-                    android:text="@string/dashboard_action" />
+                    android:src="@drawable/preview"
+                    />
+                <TextView
+                       style="@style/DashBoardActionText"
+                       android:text="View" />
             </LinearLayout>
         </TableRow>
 
         <TableRow style="@style/DashBoardRow" >
 
-            <LinearLayout style="@style/DashBoardActionWrapLeft" >
-
-                <Button
-                    style="@style/DashBoardAction"
-                    android:drawableTop="@drawable/logomanusaicon"
-                    android:onClick="onRefreshAction"
-                    android:text="@string/dashboard_action" />
-            </LinearLayout>
-
-            <LinearLayout style="@style/DashBoardActionWrapRight" 
-                android:layout_marginLeft="0dp"
+            <LinearLayout style="@style/DashBoardActionWrapLeft" 
+                android:layout_marginBottom="1dp"
                 >
 
-                <Button
+                <ImageButton
                     style="@style/DashBoardAction"
-                    android:drawableTop="@drawable/logomanusaicon"
+                    android:onClick="onRefreshAction"
+                    android:src="@drawable/print"
+                    android:text="@string/dashboard_action" 
+                    
+                    />
+                <TextView
+                       style="@style/DashBoardActionText"
+                       android:text="History" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/DashBoardActionWrapRight"
+                android:layout_marginBottom="1dp" >
+
+                <ImageButton
+                    style="@style/DashBoardAction"
                     android:onClick="onPreferencesAction"
-                    android:text="@string/dashboard_action" />
+                    android:src="@drawable/dictionary"
+                    />
+                <TextView
+                       style="@style/DashBoardActionText"
+                       android:text="Manuals" 
+                       
+                       />
             </LinearLayout>
         </TableRow>
     </TableLayout>
