@@ -28,6 +28,11 @@
     <string name="manualInsertionBack">Back</string>
     <string name="itemSelectorChoosen">Done</string>
     <string name="dashboard_action">Action</string>
-
+    
+    <color name="color1">#008C9E</color>
+    <color name="color2">#343838</color>
+    <color name="color3">#005F6B</color>
+    <color name="color4">#00B4CC</color>
+    <color name="color5">#00DFFC</color>
 
 </resources>

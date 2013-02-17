@@ -1,9 +1,14 @@
 package it.manusaservices.activities;
 
 
+import android.app.ActionBar;
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import it.manusaserveces.activities.R;
 
 public class DashBoard extends ManusaActivity {
@@ -13,7 +18,8 @@ public class DashBoard extends ManusaActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.dashboard);
-		android.app.ActionBar actionBar = getActionBar();
+		ActionBar actionBar = getActionBar();
+		//actionBar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffffff")));
 
 	}
 	
@@ -21,6 +27,16 @@ public class DashBoard extends ManusaActivity {
 	public boolean onCreateOptionsMenu(Menu menu){
 		MenuInflater inflater = getMenuInflater();
 		inflater.inflate(R.menu.settings,menu);
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		switch (item.getItemId()) {
+		case R.id.preferences:
+			startActivity(new Intent(this, PrefsActivity.class));
+			break;
+		}
 		return true;
 	}
 	
