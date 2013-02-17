@@ -1,22 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-	<style name="Titles" parent="@android:style/TextAppearance.Medium">
-		<item name="android:layout_width">fill_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:enabled">false</item>
-	</style>
-	
-	<style name="Text" parent="@android:style/TextAppearance.Medium">
-		<item name="android:layout_width">fill_parent</item>
-		<item name="android:layout_height">wrap_content</item>
-		<item name="android:layout_gravity">left|center_vertical</item>
-		<item name="android:padding">6dip</item>
-	</style>
-	
 	<style name="DashBoardTable">
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:layout_weight">1</item>
+        <item name="android:background">#ffffff</item>
     </style>
 
     <style name="DashBoardRow">
@@ -33,20 +21,30 @@
         <item name="android:layout_width">fill_parent</item>
         <item name="android:layout_height">fill_parent</item>
         <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/color3</item>
     </style>
     
+     <style name="DashBoardActionWrapLeft" parent="@style/DashBoardActionWrap">
+        <item name="android:layout_marginLeft">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
     
+    <style name="DashBoardActionWrapRight" parent="@style/DashBoardActionWrap">
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+    </style>
     
+     
     <style name="DashBoardAction">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:background">@color/color1</item>
     </style>
     
    <style name="CustomActivityTheme" parent="@android:style/Theme.Holo">
         <item name="android:actionBarStyle">@style/MyActionBar</item>
+        
         <!-- other activity and action bar styles here -->
     </style>
 
