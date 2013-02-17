@@ -28,6 +28,8 @@
         <activity android:name="it.manusaservices.activities.PrefsActivity" />
         <activity android:name="it.manusaservices.activities.PlantPullerActivity" />
         <activity android:name="it.manusaservices.activities.ViewPlantActivity"/>
+        <activity android:name="it.manusaservices.activities.ReportActivity" android:theme="@style/Theme.MyTheme"
+            />
     </application>
 
 </manifest>

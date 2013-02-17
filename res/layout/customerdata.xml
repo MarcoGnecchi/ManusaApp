@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" android:layout_height="match_parent"
+	android:orientation="vertical">
+	<Button android:text="Dati cliente" style="@style/Titles"></Button>
+	<TableLayout android:id="@+id/userDataTable"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="1">
+		<TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+			<TextView android:layout_column="1" android:text="Nome cliente"
+				style="@style/Text" android:gravity="left" />
+			<TextView android:text=""
+				style="@style/Text" android:gravity="right" android:id="@+id/customername"/>
+		</TableRow>
+
+	</TableLayout>
+	<Button android:text="Tipi di pagamento" style="@style/Titles"></Button>
+	<RadioGroup android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical"
+		android:id="@+id/paymentRadioGroup">
+		
+
+
+	</RadioGroup>
+	<Button android:text="Seleziona" android:id="@+id/postCustomerButton"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
+</LinearLayout>

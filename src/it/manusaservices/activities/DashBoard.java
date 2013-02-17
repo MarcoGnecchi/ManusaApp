@@ -64,7 +64,7 @@ public class DashBoard extends ManusaActivity {
 				break;
 
 			case CREATE_REPORT: {
-				i = new Intent(this, ViewPlantActivity.class);
+				i = new Intent(this, ReportActivity.class);
 			}
 				break;
 

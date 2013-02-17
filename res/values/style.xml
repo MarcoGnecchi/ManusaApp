@@ -76,6 +76,9 @@
         <item name="android:background">@color/color2</item>
     </style>
     
+    <style name="Theme.MyTheme" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+    </style>
     
 	
 </resources>
