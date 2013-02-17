@@ -28,7 +28,7 @@
     <string name="manualInsertionBack">Back</string>
     <string name="itemSelectorChoosen">Done</string>
     <string name="dashboard_action">Action</string>
-    <string name="insertplan">Please insert the plan id manually or use the camera for as a barcode reader</string>
+    <string name="insertplan">Please insert the plan id manually or use the camera as a barcode reader</string>
     
     <color name="color1">#008C9E</color>
     <color name="color2">#343838</color>

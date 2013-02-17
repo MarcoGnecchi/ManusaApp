@@ -9,7 +9,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/insertplan"
-        android:textAppearance="?android:attr/textAppearanceLargePopupMenu" />
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu" 
+        android:padding="5dp"
+        />
 
     <LinearLayout
         android:layout_width="fill_parent"

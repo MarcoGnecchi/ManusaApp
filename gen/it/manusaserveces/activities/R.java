@@ -32,15 +32,25 @@ public final class R {
     }
     public static final class id {
         public static final int barcode=0x7f0a0002;
-        public static final int camera=0x7f0a0004;
+        public static final int camera=0x7f0a000d;
         public static final int home_root=0x7f0a0000;
         public static final int insertplant=0x7f0a0001;
-        public static final int preferences=0x7f0a0005;
+        public static final int plantAddressText=0x7f0a000c;
+        public static final int plantCityText=0x7f0a000b;
+        public static final int plantDateWarrantyText=0x7f0a0008;
+        public static final int plantListViewerLayout=0x7f0a0004;
+        public static final int plantNumberText=0x7f0a0005;
+        public static final int plantShipmentDateText=0x7f0a0007;
+        public static final int plantStateText=0x7f0a0006;
+        public static final int plantSupplyTypeText=0x7f0a000a;
+        public static final int plantWarrantyTypeText=0x7f0a0009;
+        public static final int preferences=0x7f0a000e;
         public static final int search=0x7f0a0003;
     }
     public static final class layout {
         public static final int dashboard=0x7f030000;
         public static final int plantpuller=0x7f030001;
+        public static final int viewplant=0x7f030002;
     }
     public static final class menu {
         public static final int pull_plant=0x7f090000;
@@ -79,17 +89,19 @@ public final class R {
     public static final class style {
         /**  other activity and action bar styles here 
          */
-        public static final int CustomActivityTheme=0x7f080007;
-        public static final int DashBoardAction=0x7f080005;
-        public static final int DashBoardActionText=0x7f080006;
-        public static final int DashBoardActionWrap=0x7f080002;
-        public static final int DashBoardActionWrapLeft=0x7f080003;
-        public static final int DashBoardActionWrapRight=0x7f080004;
-        public static final int DashBoardRow=0x7f080001;
-        public static final int DashBoardTable=0x7f080000;
+        public static final int CustomActivityTheme=0x7f080009;
+        public static final int DashBoardAction=0x7f080007;
+        public static final int DashBoardActionText=0x7f080008;
+        public static final int DashBoardActionWrap=0x7f080004;
+        public static final int DashBoardActionWrapLeft=0x7f080005;
+        public static final int DashBoardActionWrapRight=0x7f080006;
+        public static final int DashBoardRow=0x7f080003;
+        public static final int DashBoardTable=0x7f080002;
         /**  style for the action bar backgrounds 
          */
-        public static final int MyActionBar=0x7f080008;
+        public static final int MyActionBar=0x7f08000a;
+        public static final int Text=0x7f080001;
+        public static final int Titles=0x7f080000;
     }
     public static final class xml {
         public static final int prefs=0x7f040000;

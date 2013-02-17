@@ -20,12 +20,6 @@ public class ManusaApplication extends Application {
 	
 	public ManusaApplication() {
 		
-		prefs = PreferenceManager.getDefaultSharedPreferences(this);
-		try {
-			URL url = new URL("www.manusa.it");
-		} catch (MalformedURLException e) {
-			e.printStackTrace();
-		}
 	}
 
 	public Plant getPlant() {
