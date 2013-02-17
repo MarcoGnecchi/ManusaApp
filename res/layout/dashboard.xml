@@ -29,7 +29,7 @@
 
                 <ImageButton
                     style="@style/DashBoardAction"
-                    android:onClick="onListAction"
+                    android:onClick="onPreviewAction"
                     android:src="@drawable/preview"
                     />
                 <TextView
